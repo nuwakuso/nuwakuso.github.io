@@ -10,13 +10,16 @@
     
 <!-- music -->
 
-<div id="player"><embed src="./nuwa_files/music/mimi-eternal.mp3" autostart="true" loop="true" width="0" height="0"></div>
-	<script>
-				var vid = document.getElementById("player");
-                vid.volume = 0.2;
+	<audio preload="auto" autoplay="" loop="">
+		<source id="music" src="./nuwa_files/music/mimi-eternal.mp3" type="audio/mpeg"> <!-- current song is bladee - trash star -->
+			<script>
+			var audio = document.currentScript.parentElement;
+			audio.volume = 0.3;
 			</script>
+    </audio>
   
  <!-- sloppy html -->
+
  <body oncontextmenu="return false;">
 
     <div class="content">
@@ -42,7 +45,7 @@
 
     <p><font face="verdana" size="1">nuwa@space:~$ </font><input type="text" id="hello" autofocus />
 
-<!-- end of page -->
-
     <div style="padding-top: 25px" align="bottom">
-    </div>
+</div>
+
+<!-- end of page -->
